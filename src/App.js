@@ -1,24 +1,21 @@
-import logo from './logo.svg';
+import { Container } from '@material-ui/core';
+import React from 'react';
+import Header from './components/Header/Header';
+import SocialBar from './components/Social/SocialBar';
 import './App.css';
+import CardContainer from './components/CardContainer/CardContainer';
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <>
+    <Container maxWidth="lg">
+      <Header />
+      <CardContainer />
+      <SocialBar />
+
+    </Container>
+      
+    </>
   );
 }
 
