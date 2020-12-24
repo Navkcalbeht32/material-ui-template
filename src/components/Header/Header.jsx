@@ -1,12 +1,12 @@
 import React from 'react';
 import Container from '@material-ui/core/Container';
-import { makeStyles } from '@material-ui/core/styles';
 import Fab from '@material-ui/core/Fab';
 import './Header.styles.scss';
 import WbSunnyIcon from '@material-ui/icons/WbSunny';
 import MenuIcon from '@material-ui/icons/Menu';
 import SportsEsportsIcon from '@material-ui/icons/SportsEsports';
 import logo from '../../assets/name-logo.svg';
+import theme from '../../Theme';
 
 const Header = () => {
     return (
@@ -18,19 +18,19 @@ const Header = () => {
                     </Fab>
                 </div>
                 <div>
-                    <Fab className="nav-fab" color="primary" variant="extended">
+                    <Fab className="nav-fab" color="secondary" variant="extended">
                         PORTFOLIO
                     </Fab>
-                    <Fab className="nav-fab" color="primary" aria-label="add">
+                    <Fab className="nav-fab" color="secondary" aria-label="add">
                         UX
                     </Fab>
-                    <Fab className="nav-fab" color="primary" aria-label="edit">
+                    <Fab className="nav-fab" color="secondary" aria-label="edit">
                         <SportsEsportsIcon fontSize='medium' />
                     </Fab>
-                    <Fab className="nav-fab" color="primary" aria-label="edit">
+                    <Fab className="nav-fab" color="secondary" aria-label="edit">
                         <WbSunnyIcon fontSize='medium' />
                     </Fab>
-                    <Fab className="nav-fab" color="primary" aria-label="edit">
+                    <Fab className="nav-fab" color="secondary" aria-label="edit">
                         <MenuIcon fontSize='medium' />
                     </Fab>
                 </div>
